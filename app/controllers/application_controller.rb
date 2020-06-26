@@ -11,12 +11,18 @@ class App < Sinatra::Base
 
   post '/teams' do
 
+<<<<<<< HEAD
 
     @team_name = params[:team][:name]
     @team_motto = params[:team][:motto]
+=======
+>>>>>>> 4775d1972c659d42c7b8cc819d1d551e5729d96b
     @hero_name = []
     @hero_power = []
     @hero_bio = []
+    @team_name = params[:team][:name]
+    @team_motto = params[:team][:motto]
+
     @team_members = params[:team][:members]
     @team_members.each do |hero|  #<----------problem with the each iterator
       @hero_name << hero[:name]
